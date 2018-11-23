@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="Enchendo - Crítico">
+<graphics>
+<position x="420.0" y="270.0"/>
+</graphics>
+<name>
+<value>Enchendo - Crítico</value>
+<graphics>
+<offset x="134.0" y="15.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Enchendo - OK">
+<graphics>
+<position x="420.0" y="435.0"/>
+</graphics>
+<name>
+<value>Enchendo - OK</value>
+<graphics>
+<offset x="126.0" y="18.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Esvaziando">
+<graphics>
+<position x="420.0" y="125.0"/>
+</graphics>
+<name>
+<value>Esvaziando</value>
+<graphics>
+<offset x="6.0" y="16.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="S1 Fecha">
+<graphics>
+<position x="330.0" y="270.0"/>
+</graphics>
+<name>
+<value>S1 Fecha</value>
+<graphics>
+<offset x="-3.0" y="20.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S2 Abre">
+<graphics>
+<position x="420.0" y="195.0"/>
+</graphics>
+<name>
+<value>S2 Abre</value>
+<graphics>
+<offset x="69.0" y="16.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S2 Fecha">
+<graphics>
+<position x="420.0" y="345.0"/>
+</graphics>
+<name>
+<value>S2 Fecha</value>
+<graphics>
+<offset x="72.0" y="14.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Enchendo - Crítico to S2 Fecha" source="Enchendo - Crítico" target="S2 Fecha">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="296" curvePoint="false"/>
+<arcpath id="001" x="432" y="342" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Enchendo - OK to S1 Fecha" source="Enchendo - OK" target="S1 Fecha">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="424" y="434" curvePoint="false"/>
+<arcpath id="001" x="342" y="297" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Esvaziando to S2 Abre" source="Esvaziando" target="S2 Abre">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="151" curvePoint="false"/>
+<arcpath id="001" x="432" y="192" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Fecha to Esvaziando" source="S1 Fecha" target="Esvaziando">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="282" curvePoint="false"/>
+<arcpath id="001" x="424" y="149" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Abre to Enchendo - Crítico" source="S2 Abre" target="Enchendo - Crítico">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="222" curvePoint="false"/>
+<arcpath id="001" x="432" y="267" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Fecha to Enchendo - OK" source="S2 Fecha" target="Enchendo - OK">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="432" y="372" curvePoint="false"/>
+<arcpath id="001" x="432" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

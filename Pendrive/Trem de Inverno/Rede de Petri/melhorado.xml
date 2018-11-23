@@ -1,0 +1,2560 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="G = 0">
+<graphics>
+<position x="690.0" y="461.1111111111111"/>
+</graphics>
+<name>
+<value>G = 0</value>
+<graphics>
+<offset x="34.888888888888886" y="45.555555555555536"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="G = 1">
+<graphics>
+<position x="690.0" y="371.1111111111111"/>
+</graphics>
+<name>
+<value>G = 1</value>
+<graphics>
+<offset x="32.0" y="38.88888888888889"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="G em uso">
+<graphics>
+<position x="690.0" y="131.11111111111111"/>
+</graphics>
+<name>
+<value>G em uso</value>
+<graphics>
+<offset x="45.111111111111114" y="-15.222222222222229"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1 = 0">
+<graphics>
+<position x="240.0" y="386.1111111111111"/>
+</graphics>
+<name>
+<value>M1 = 0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M1 = 1">
+<graphics>
+<position x="240.0" y="506.11111111111114"/>
+</graphics>
+<name>
+<value>M1 = 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M2 = 0">
+<graphics>
+<position x="1283.3333333333333" y="386.1111111111111"/>
+</graphics>
+<name>
+<value>M2 = 0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="M2 = 1">
+<graphics>
+<position x="1283.3333333333333" y="506.11111111111114"/>
+</graphics>
+<name>
+<value>M2 = 1</value>
+<graphics>
+<offset x="-6.666666666666667" y="22.222222222222218"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Mutex G">
+<graphics>
+<position x="690.0" y="206.11111111111111"/>
+</graphics>
+<name>
+<value>Mutex G</value>
+<graphics>
+<offset x="37.888888888888886" y="-7.888888888888896"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Sensor A1 = 1">
+<graphics>
+<position x="105.0" y="866.1111111111111"/>
+</graphics>
+<name>
+<value>Sensor A1 = 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Sensor A2 = 1">
+<graphics>
+<position x="1380.0" y="866.1111111111111"/>
+</graphics>
+<name>
+<value>Sensor A2 = 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Sensor B1 = 1">
+<graphics>
+<position x="480.0" y="41.11111111111111"/>
+</graphics>
+<name>
+<value>Sensor B1 = 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Sensor B2 = 1">
+<graphics>
+<position x="990.0" y="57.77777777777778"/>
+</graphics>
+<name>
+<value>Sensor B2 = 1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 aguarda G">
+<graphics>
+<position x="585.0" y="191.11111111111111"/>
+</graphics>
+<name>
+<value>T1 aguarda G</value>
+<graphics>
+<offset x="8.222222222222186" y="36.66666666666668"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 aguarda G virar">
+<graphics>
+<position x="525.0" y="461.1111111111111"/>
+</graphics>
+<name>
+<value>T1 aguarda G virar</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 em Engelberg">
+<graphics>
+<position x="510.0" y="651.1111111111111"/>
+</graphics>
+<name>
+<value>T1 em Engelberg</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 em Lucerne">
+<graphics>
+<position x="88.33333333333333" y="547.7777777777777"/>
+</graphics>
+<name>
+<value>T1 em Lucerne</value>
+<graphics>
+<offset x="12.22222222222222" y="-2.2222222222222223"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 em verificar caminho">
+<graphics>
+<position x="480.0" y="296.1111111111111"/>
+</graphics>
+<name>
+<value>T1 em verificar caminho</value>
+<graphics>
+<offset x="0.0" y="-1.1111111111111112"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 entre Lucerne e Stans">
+<graphics>
+<position x="90.0" y="57.77777777777781"/>
+</graphics>
+<name>
+<value>T1 entre Lucerne e Stans</value>
+<graphics>
+<offset x="58.888888888888935" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 entre Stans e Lucerne">
+<graphics>
+<position x="516.6666666666666" y="861.1111111111111"/>
+</graphics>
+<name>
+<value>T1 entre Stans e Lucerne</value>
+<graphics>
+<offset x="157.77777777777771" y="-1.1111111111111107"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 Saindo de Engelberg">
+<graphics>
+<position x="506.66666666666674" y="727.7777777777777"/>
+</graphics>
+<name>
+<value>T1 Saindo de Engelberg</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T1 segue por G">
+<graphics>
+<position x="510.0" y="581.1111111111111"/>
+</graphics>
+<name>
+<value>T1 segue por G</value>
+<graphics>
+<offset x="-13.33333333333333" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 aguarda G">
+<graphics>
+<position x="855.0" y="174.44444444444443"/>
+</graphics>
+<name>
+<value>T2 aguarda G</value>
+<graphics>
+<offset x="0.0" y="17.777777777777775"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 aguarda G virar">
+<graphics>
+<position x="948.3333333333333" y="459.44444444444446"/>
+</graphics>
+<name>
+<value>T2 aguarda G virar</value>
+<graphics>
+<offset x="0.0" y="4.444444444444444"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 em Engelberg">
+<graphics>
+<position x="960.0" y="657.7777777777777"/>
+</graphics>
+<name>
+<value>T2 em Engelberg</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 em Sarnen">
+<graphics>
+<position x="1380.0" y="521.1111111111111"/>
+</graphics>
+<name>
+<value>T2 em Sarnen</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 em verificar caminho">
+<graphics>
+<position x="988.3333333333333" y="282.7777777777777"/>
+</graphics>
+<name>
+<value>T2 em verificar caminho</value>
+<graphics>
+<offset x="160.00000000000009" y="6.666666666666666"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 entre Sarnen e Stans">
+<graphics>
+<position x="1378.3333333333333" y="59.44444444444444"/>
+</graphics>
+<name>
+<value>T2 entre Sarnen e Stans</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 entre Stans e Sarnen">
+<graphics>
+<position x="960.0" y="867.7777777777777"/>
+</graphics>
+<name>
+<value>T2 entre Stans e Sarnen</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 saindo de Engelberg">
+<graphics>
+<position x="960.0" y="717.7777777777777"/>
+</graphics>
+<name>
+<value>T2 saindo de Engelberg</value>
+<graphics>
+<offset x="152.2222222222222" y="6.666666666666666"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="T2 segue por G">
+<graphics>
+<position x="960.0" y="597.7777777777777"/>
+</graphics>
+<name>
+<value>T2 segue por G</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="Apertar M1 para partida">
+<graphics>
+<position x="300.0" y="446.1111111111111"/>
+</graphics>
+<name>
+<value>Apertar M1 para partida</value>
+<graphics>
+<offset x="-5.0" y="20.555555555555554"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Apertar M2 para partida">
+<graphics>
+<position x="1225.0" y="446.1111111111111"/>
+</graphics>
+<name>
+<value>Apertar M2 para partida</value>
+<graphics>
+<offset x="27.222222222222214" y="-3.8888888888888857"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Bateu o tempo, T2 = L">
+<graphics>
+<position x="840.0" y="687.7777777777777"/>
+</graphics>
+<name>
+<value>Bateu o tempo, T2 = L</value>
+<graphics>
+<offset x="3.8888888888887894" y="20.55555555555555"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Deu o tempo, T1 = L">
+<graphics>
+<position x="595.0" y="692.7777777777777"/>
+</graphics>
+<name>
+<value>Deu o tempo, T1 = L</value>
+<graphics>
+<offset x="12.777777777777775" y="17.222222222222218"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="G vira = 1, T1 = R">
+<graphics>
+<position x="525.0" y="521.1111111111111"/>
+</graphics>
+<name>
+<value>G vira = 1, T1 = R</value>
+<graphics>
+<offset x="120.0" y="34.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="G vira 0, T2 = R">
+<graphics>
+<position x="945.0" y="521.1111111111111"/>
+</graphics>
+<name>
+<value>G vira 0, T2 = R</value>
+<graphics>
+<offset x="3.8888888888888893" y="37.22222222222223"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Parar T1">
+<graphics>
+<position x="585.0" y="41.11111111111111"/>
+</graphics>
+<name>
+<value>Parar T1</value>
+<graphics>
+<offset x="39.555555555555564" y="-0.7777777777777701"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Parar T2">
+<graphics>
+<position x="856.6666666666666" y="57.77777777777778"/>
+</graphics>
+<name>
+<value>Parar T2</value>
+<graphics>
+<offset x="13.888888888888884" y="1.6666666666666647"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Sensor C = 1, T1 = S">
+<graphics>
+<position x="593.3333333333334" y="624.4444444444445"/>
+</graphics>
+<name>
+<value>Sensor C = 1, T1 = S</value>
+<graphics>
+<offset x="-6.111111111111111" y="17.22222222222222"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="Sensor C = 1, T2 = S">
+<graphics>
+<position x="840.0" y="612.7777777777777"/>
+</graphics>
+<name>
+<value>Sensor C = 1, T2 = S</value>
+<graphics>
+<offset x="11.666666666666664" y="17.22222222222222"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 = R">
+<graphics>
+<position x="90.0" y="416.1111111111111"/>
+</graphics>
+<name>
+<value>T1 = R</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 = S">
+<graphics>
+<position x="90.0" y="701.1111111111111"/>
+</graphics>
+<name>
+<value>T1 = S</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 aproxima de Lucerne">
+<graphics>
+<position x="285.0" y="56.11111111111111"/>
+</graphics>
+<name>
+<value>T1 aproxima de Lucerne</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 Parar">
+<graphics>
+<position x="525.0" y="371.1111111111111"/>
+</graphics>
+<name>
+<value>T1 Parar</value>
+<graphics>
+<offset x="2.777777777777778" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 passou G, devolve mutex">
+<graphics>
+<position x="508.3333333333333" y="789.4444444444445"/>
+</graphics>
+<name>
+<value>T1 passou G, devolve mutex</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 pega mutex">
+<graphics>
+<position x="480.0" y="176.11111111111111"/>
+</graphics>
+<name>
+<value>T1 pega mutex</value>
+<graphics>
+<offset x="9.444444444444445" y="22.77777777777777"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 pega mutex2">
+<graphics>
+<position x="585.0" y="296.1111111111111"/>
+</graphics>
+<name>
+<value>T1 pega mutex2</value>
+<graphics>
+<offset x="11.0" y="-6.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 segue viagem">
+<graphics>
+<position x="283.33333333333337" y="864.4444444444445"/>
+</graphics>
+<name>
+<value>T1 segue viagem</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 Seguir">
+<graphics>
+<position x="435.0" y="371.1111111111111"/>
+</graphics>
+<name>
+<value>T1 Seguir</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 = R">
+<graphics>
+<position x="1380.0" y="386.1111111111111"/>
+</graphics>
+<name>
+<value>T2 = R</value>
+<graphics>
+<offset x="65.00000000000001" y="22.777777777777775"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 = S">
+<graphics>
+<position x="1380.0" y="701.1111111111111"/>
+</graphics>
+<name>
+<value>T2 = S</value>
+<graphics>
+<offset x="78.33333333333333" y="20.55555555555556"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 aproxima de Lucerne">
+<graphics>
+<position x="1206.6666666666667" y="59.44444444444444"/>
+</graphics>
+<name>
+<value>T2 aproxima de Lucerne</value>
+<graphics>
+<offset x="33.888888888888886" y="38.33333333333334"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 Parar">
+<graphics>
+<position x="945.0" y="372.77777777777777"/>
+</graphics>
+<name>
+<value>T2 Parar</value>
+<graphics>
+<offset x="0.5555555555555558" y="-0.5555555555555585"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 passou G, devolve mutex">
+<graphics>
+<position x="960.0" y="792.7777777777777"/>
+</graphics>
+<name>
+<value>T2 passou G, devolve mutex</value>
+<graphics>
+<offset x="172.7777777777778" y="9.444444444444445"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 pega mutex">
+<graphics>
+<position x="988.3333333333333" y="177.77777777777777"/>
+</graphics>
+<name>
+<value>T2 pega mutex</value>
+<graphics>
+<offset x="103.88888888888899" y="16.111111111111114"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 pega mutex2">
+<graphics>
+<position x="855.0" y="282.7777777777777"/>
+</graphics>
+<name>
+<value>T2 pega mutex2</value>
+<graphics>
+<offset x="101.66666666666679" y="-7.222222222222197"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 segue viagem">
+<graphics>
+<position x="1195.0" y="866.1111111111111"/>
+</graphics>
+<name>
+<value>T2 segue viagem</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 Seguir">
+<graphics>
+<position x="1035.0" y="371.1111111111111"/>
+</graphics>
+<name>
+<value>T2 Seguir</value>
+<graphics>
+<offset x="73.88888888888899" y="19.444444444444443"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="Aguardando G to Pegar mutex2" source="T1 aguarda G" target="T1 pega mutex2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="595" y="216" curvePoint="false"/>
+<arcpath id="001" x="596" y="292" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Aguardando G virar to G vira = 0, T1 = R" source="T1 aguarda G virar" target="G vira = 1, T1 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="535" y="486" curvePoint="false"/>
+<arcpath id="001" x="536" y="516" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Apertar M1 para partida to M1 = 1" source="Apertar M1 para partida" target="M1 = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="311" y="472" curvePoint="false"/>
+<arcpath id="001" x="296" y="531" curvePoint="false"/>
+<arcpath id="002" x="264" y="521" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Apertar M1 para partida to T1 em Lucerne" source="Apertar M1 para partida" target="T1 em Lucerne">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="315" y="462" curvePoint="false"/>
+<arcpath id="001" x="330" y="481" curvePoint="false"/>
+<arcpath id="002" x="330" y="547" curvePoint="false"/>
+<arcpath id="003" x="113" y="557" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Apertar M2 para partida to M2 = 1" source="Apertar M2 para partida" target="M2 = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1240" y="462" curvePoint="false"/>
+<arcpath id="001" x="1283" y="505" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Apertar M2 para partida to T2 em Sarnen" source="Apertar M2 para partida" target="T2 em Sarnen">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1230" y="462" curvePoint="false"/>
+<arcpath id="001" x="1196" y="464" curvePoint="false"/>
+<arcpath id="002" x="1196" y="597" curvePoint="false"/>
+<arcpath id="003" x="1330" y="597" curvePoint="false"/>
+<arcpath id="004" x="1363" y="531" curvePoint="false"/>
+<arcpath id="005" x="1375" y="531" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Bateu o tempo, T2 = L to T2 saindo de Engelberg" source="Bateu o tempo, T2 = L" target="T2 saindo de Engelberg">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="855" y="703" curvePoint="false"/>
+<arcpath id="001" x="955" y="725" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Deu o tempo, T1 = L to T1 Saindo de Engelberg" source="Deu o tempo, T1 = L" target="T1 Saindo de Engelberg">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="600" y="708" curvePoint="false"/>
+<arcpath id="001" x="531" y="733" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G = 0 to Seguir" source="G = 1" target="T1 Seguir">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="685" y="378" curvePoint="false"/>
+<arcpath id="001" x="541" y="352" curvePoint="false"/>
+<arcpath id="002" x="450" y="387" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G = 0 to T2 Seguir" source="G = 0" target="T2 Seguir">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="715" y="468" curvePoint="false"/>
+<arcpath id="001" x="1040" y="387" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G = 1 to G vira = 0, T1 = R" source="G = 0" target="G vira = 1, T1 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="686" y="478" curvePoint="false"/>
+<arcpath id="001" x="540" y="536" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G = 1 to G vira 0, T2 = R" source="G = 1" target="G vira 0, T2 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="713" y="390" curvePoint="false"/>
+<arcpath id="001" x="951" y="527" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G = 1 to Parar" source="G = 0" target="T1 Parar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="686" y="465" curvePoint="false"/>
+<arcpath id="001" x="540" y="386" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G = 1 to T2 Parar" source="G = 1" target="T2 Parar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="715" y="380" curvePoint="false"/>
+<arcpath id="001" x="930" y="364" curvePoint="false"/>
+<arcpath id="002" x="951" y="378" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G em uso to Parar T1" source="G em uso" target="Parar T1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="687" y="133" curvePoint="false"/>
+<arcpath id="001" x="601" y="46" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G em uso to Parar T2" source="G em uso" target="Parar T2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="714" y="136" curvePoint="false"/>
+<arcpath id="001" x="862" y="64" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G em uso to T1 passou G, devolve mutex" source="G em uso" target="T1 passou G, devolve mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="688" y="151" curvePoint="false"/>
+<arcpath id="001" x="630" y="197" curvePoint="false"/>
+<arcpath id="002" x="630" y="731" curvePoint="false"/>
+<arcpath id="003" x="524" y="795" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G em uso to T2 passou G, devolve mutex" source="G em uso" target="T2 passou G, devolve mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="712" y="151" curvePoint="false"/>
+<arcpath id="001" x="763" y="197" curvePoint="false"/>
+<arcpath id="002" x="763" y="731" curvePoint="false"/>
+<arcpath id="003" x="965" y="798" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G vira = 0, T1 = R to G = 0" source="G vira = 1, T1 = R" target="G = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="541" y="526" curvePoint="false"/>
+<arcpath id="001" x="646" y="382" curvePoint="false"/>
+<arcpath id="002" x="685" y="382" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G vira = 0, T1 = R to Seguindo por G" source="G vira = 1, T1 = R" target="T1 segue por G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="535" y="546" curvePoint="false"/>
+<arcpath id="001" x="525" y="577" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G vira 0, T2 = R to G = 0" source="G vira 0, T2 = R" target="G = 0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="950" y="537" curvePoint="false"/>
+<arcpath id="001" x="715" y="475" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="G vira 0, T2 = R to T2 segue por G" source="G vira 0, T2 = R" target="T2 segue por G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="955" y="546" curvePoint="false"/>
+<arcpath id="001" x="966" y="593" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 = 0 to Apertar M1 para partida" source="M1 = 0" target="Apertar M1 para partida">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="258" y="408" curvePoint="false"/>
+<arcpath id="001" x="305" y="457" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M1 = 1 to T1 = R" source="M1 = 1" target="T1 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="235" y="512" curvePoint="false"/>
+<arcpath id="001" x="180" y="497" curvePoint="false"/>
+<arcpath id="002" x="105" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M2 = 0 to Apertar M2 para partida" source="M2 = 0" target="Apertar M2 para partida">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1284" y="408" curvePoint="false"/>
+<arcpath id="001" x="1241" y="452" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="M2 = 1 to T2 = R" source="M2 = 1" target="T2 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1304" y="505" curvePoint="false"/>
+<arcpath id="001" x="1385" y="402" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mutex G to Pegar mutex" source="Mutex G" target="T1 pega mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="685" y="215" curvePoint="false"/>
+<arcpath id="001" x="495" y="192" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mutex G to Pegar mutex2" source="Mutex G" target="T1 pega mutex2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="690" y="227" curvePoint="false"/>
+<arcpath id="001" x="600" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mutex G to T2 pega mutex" source="Mutex G" target="T2 pega mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="715" y="216" curvePoint="false"/>
+<arcpath id="001" x="993" y="194" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Mutex G to T2 pega mutex2" source="Mutex G" target="T2 pega mutex2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="713" y="224" curvePoint="false"/>
+<arcpath id="001" x="860" y="298" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Parar T1 to Aguardando G" source="Parar T1" target="T1 aguarda G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="595" y="66" curvePoint="false"/>
+<arcpath id="001" x="595" y="186" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Parar T1 to G em uso" source="Parar T1" target="G em uso">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="600" y="56" curvePoint="false"/>
+<arcpath id="001" x="688" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Parar T2 to G em uso" source="Parar T2" target="G em uso">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="862" y="74" curvePoint="false"/>
+<arcpath id="001" x="714" y="135" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Parar T2 to T2 aguarda G" source="Parar T2" target="T2 aguarda G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="867" y="83" curvePoint="false"/>
+<arcpath id="001" x="865" y="170" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Parar to Aguardando G virar" source="T1 Parar" target="T1 aguarda G virar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="535" y="396" curvePoint="false"/>
+<arcpath id="001" x="535" y="456" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Parar to G = 1" source="T1 Parar" target="G = 0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="541" y="376" curvePoint="false"/>
+<arcpath id="001" x="676" y="442" curvePoint="false"/>
+<arcpath id="002" x="691" y="460" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pegar mutex2 to G em uso" source="T1 pega mutex2" target="G em uso">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="601" y="302" curvePoint="false"/>
+<arcpath id="001" x="692" y="154" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pegar mutex2 to Verificar caminho" source="T1 pega mutex2" target="T1 em verificar caminho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="590" y="307" curvePoint="false"/>
+<arcpath id="001" x="505" y="306" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pegar mutex to G em uso" source="T1 pega mutex" target="G em uso">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="495" y="182" curvePoint="false"/>
+<arcpath id="001" x="685" y="144" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pegar mutex to Verificar caminho" source="T1 pega mutex" target="T1 em verificar caminho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="491" y="202" curvePoint="false"/>
+<arcpath id="001" x="490" y="292" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Seguir to G = 0" source="T1 Seguir" target="G = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="451" y="381" curvePoint="false"/>
+<arcpath id="001" x="541" y="337" curvePoint="false"/>
+<arcpath id="002" x="661" y="353" curvePoint="false"/>
+<arcpath id="003" x="688" y="373" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Seguir to Seguindo por G" source="T1 Seguir" target="T1 segue por G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="445" y="396" curvePoint="false"/>
+<arcpath id="001" x="451" y="502" curvePoint="false"/>
+<arcpath id="002" x="511" y="580" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor A1 = 1 to T1 = S" source="Sensor A1 = 1" target="T1 = S">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="113" y="862" curvePoint="false"/>
+<arcpath id="001" x="101" y="726" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor A2 = 1 to T2 = S" source="Sensor A2 = 1" target="T2 = S">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1390" y="862" curvePoint="false"/>
+<arcpath id="001" x="1391" y="726" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor B2 = 1 to Parar T2" source="Sensor B2 = 1" target="Parar T2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="985" y="70" curvePoint="false"/>
+<arcpath id="001" x="872" y="68" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor B2 = 1 to T2 pega mutex" source="Sensor B2 = 1" target="T2 pega mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1000" y="83" curvePoint="false"/>
+<arcpath id="001" x="1000" y="173" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor B ativado to Parar T1" source="Sensor B1 = 1" target="Parar T1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="505" y="54" curvePoint="false"/>
+<arcpath id="001" x="590" y="52" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor B ativado to Pegar mutex" source="Sensor B1 = 1" target="T1 pega mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="491" y="66" curvePoint="false"/>
+<arcpath id="001" x="491" y="172" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor C = 1, T1 = S to T1 em Engelberg" source="Sensor C = 1, T1 = S" target="T1 em Engelberg">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="598" y="641" curvePoint="false"/>
+<arcpath id="001" x="535" y="657" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sensor C = 1, T2 = S to T2 em Engelberg" source="Sensor C = 1, T2 = S" target="T2 em Engelberg">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="855" y="628" curvePoint="false"/>
+<arcpath id="001" x="956" y="663" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 = R to M1 = 0" source="T1 = R" target="M1 = 0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="105" y="422" curvePoint="false"/>
+<arcpath id="001" x="180" y="397" curvePoint="false"/>
+<arcpath id="002" x="235" y="396" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 = R to T1 entre Lucerne e Stans" source="T1 = R" target="T1 entre Lucerne e Stans">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="101" y="412" curvePoint="false"/>
+<arcpath id="001" x="101" y="83" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 = S to T1 em Lucerne" source="T1 = S" target="T1 em Lucerne">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="101" y="696" curvePoint="false"/>
+<arcpath id="001" x="98" y="573" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 aproxima de Lucerne to Sensor B1 = 1" source="T1 aproxima de Lucerne" target="Sensor B1 = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="300" y="66" curvePoint="false"/>
+<arcpath id="001" x="475" y="53" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 em Engelberg to Deu o tempo, T1 = L" source="T1 em Engelberg" target="Deu o tempo, T1 = L">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="533" y="670" curvePoint="false"/>
+<arcpath id="001" x="601" y="698" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 em Lucerne to Apertar M1 para partida" source="T1 em Lucerne" target="Apertar M1 para partida">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="113" y="558" curvePoint="false"/>
+<arcpath id="001" x="330" y="564" curvePoint="false"/>
+<arcpath id="002" x="346" y="464" curvePoint="false"/>
+<arcpath id="003" x="315" y="452" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 em Lucerne to T1 = R" source="T1 em Lucerne" target="T1 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="98" y="543" curvePoint="false"/>
+<arcpath id="001" x="101" y="442" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 entre Lucerne e Stans to T1 aproxima de Lucerne" source="T1 entre Lucerne e Stans" target="T1 aproxima de Lucerne">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="115" y="70" curvePoint="false"/>
+<arcpath id="001" x="290" y="67" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 entre Stans e Lucerne to T1 segue viagem" source="T1 entre Stans e Lucerne" target="T1 segue viagem">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="512" y="873" curvePoint="false"/>
+<arcpath id="001" x="298" y="875" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 passou G, devolve mutex to Mutex G" source="T1 passou G, devolve mutex" target="Mutex G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="523" y="805" curvePoint="false"/>
+<arcpath id="001" x="646" y="731" curvePoint="false"/>
+<arcpath id="002" x="646" y="297" curvePoint="false"/>
+<arcpath id="003" x="692" y="228" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 passou G, devolve mutex to T1 entre Stans e Lucerne" source="T1 passou G, devolve mutex" target="T1 entre Stans e Lucerne">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="518" y="815" curvePoint="false"/>
+<arcpath id="001" x="524" y="856" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 Saindo de Engelberg to T1 passou G, devolve mutex" source="T1 Saindo de Engelberg" target="T1 passou G, devolve mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="517" y="753" curvePoint="false"/>
+<arcpath id="001" x="520" y="785" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 segue por G to Sensor C = 1, T1 = S" source="T1 segue por G" target="Sensor C = 1, T1 = S">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="533" y="600" curvePoint="false"/>
+<arcpath id="001" x="598" y="631" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 segue viagem to Sensor A1 = 1" source="T1 segue viagem" target="Sensor A1 = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="288" y="875" curvePoint="false"/>
+<arcpath id="001" x="130" y="876" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 = R to M2 = 0" source="T2 = R" target="M2 = 0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1385" y="392" curvePoint="false"/>
+<arcpath id="001" x="1308" y="395" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 = R to T2 entre Sarnen e Stans" source="T2 = R" target="T2 entre Sarnen e Stans">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1391" y="382" curvePoint="false"/>
+<arcpath id="001" x="1388" y="84" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 = S to T2 em Sarnen" source="T2 = S" target="T2 em Sarnen">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1391" y="696" curvePoint="false"/>
+<arcpath id="001" x="1391" y="546" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 aguarda G to T2 pega mutex2" source="T2 aguarda G" target="T2 pega mutex2">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="865" y="200" curvePoint="false"/>
+<arcpath id="001" x="866" y="278" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 aguarda G virar to G vira 0, T2 = R" source="T2 aguarda G virar" target="G vira 0, T2 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="957" y="484" curvePoint="false"/>
+<arcpath id="001" x="956" y="516" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 aproxima de Lucerne to Sensor B2 = 1" source="T2 aproxima de Lucerne" target="Sensor B2 = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1212" y="71" curvePoint="false"/>
+<arcpath id="001" x="1015" y="68" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 em Engelberg to Bateu o tempo, T2 = L" source="T2 em Engelberg" target="Bateu o tempo, T2 = L">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="956" y="673" curvePoint="false"/>
+<arcpath id="001" x="855" y="693" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 em Sarnen to Apertar M2 para partida" source="T2 em Sarnen" target="Apertar M2 para partida">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1381" y="543" curvePoint="false"/>
+<arcpath id="001" x="1330" y="614" curvePoint="false"/>
+<arcpath id="002" x="1180" y="614" curvePoint="false"/>
+<arcpath id="003" x="1180" y="447" curvePoint="false"/>
+<arcpath id="004" x="1231" y="452" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 em Sarnen to T2 = R" source="T2 em Sarnen" target="T2 = R">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1390" y="516" curvePoint="false"/>
+<arcpath id="001" x="1391" y="412" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 em verificar caminho to T2 Parar" source="T2 em verificar caminho" target="T2 Parar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="992" y="306" curvePoint="false"/>
+<arcpath id="001" x="956" y="368" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 em verificar caminho to T2 Seguir" source="T2 em verificar caminho" target="T2 Seguir">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1005" y="306" curvePoint="false"/>
+<arcpath id="001" x="1046" y="366" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 entre Sarnen e Stans to T2 aproxima de Lucerne" source="T2 entre Sarnen e Stans" target="T2 aproxima de Lucerne">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1374" y="71" curvePoint="false"/>
+<arcpath id="001" x="1222" y="70" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 entre Stans e Sarnen to T2 segue viagem" source="T2 entre Stans e Sarnen" target="T2 segue viagem">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="985" y="878" curvePoint="false"/>
+<arcpath id="001" x="1200" y="877" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 Parar to G = 1" source="T2 Parar" target="G = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="950" y="388" curvePoint="false"/>
+<arcpath id="001" x="715" y="382" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 Parar to T2 aguarda G virar" source="T2 Parar" target="T2 aguarda G virar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="955" y="398" curvePoint="false"/>
+<arcpath id="001" x="957" y="455" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 passou G, devolve mutex to Mutex G" source="T2 passou G, devolve mutex" target="Mutex G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="965" y="808" curvePoint="false"/>
+<arcpath id="001" x="746" y="731" curvePoint="false"/>
+<arcpath id="002" x="746" y="297" curvePoint="false"/>
+<arcpath id="003" x="707" y="230" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 passou G, devolve mutex to T2 entre Stans e Sarnen" source="T2 passou G, devolve mutex" target="T2 entre Stans e Sarnen">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="971" y="818" curvePoint="false"/>
+<arcpath id="001" x="970" y="863" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 pega mutex2 to G em uso" source="T2 pega mutex2" target="G em uso">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="861" y="288" curvePoint="false"/>
+<arcpath id="001" x="711" y="152" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 pega mutex2 to T2 em verificar caminho" source="T2 pega mutex2" target="T2 em verificar caminho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="870" y="293" curvePoint="false"/>
+<arcpath id="001" x="984" y="293" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 pega mutex to G em uso" source="T2 pega mutex" target="G em uso">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="994" y="184" curvePoint="false"/>
+<arcpath id="001" x="715" y="143" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 pega mutex to T2 em verificar caminho" source="T2 pega mutex" target="T2 em verificar caminho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="998" y="203" curvePoint="false"/>
+<arcpath id="001" x="998" y="278" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 saindo de Engelberg to T2 passou G, devolve mutex" source="T2 saindo de Engelberg" target="T2 passou G, devolve mutex">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="971" y="743" curvePoint="false"/>
+<arcpath id="001" x="971" y="788" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 segue por G to Sensor C = 1, T2 = S" source="T2 segue por G" target="Sensor C = 1, T2 = S">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="955" y="612" curvePoint="false"/>
+<arcpath id="001" x="855" y="618" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 segue viagem to Sensor A2 = 1" source="T2 segue viagem" target="Sensor A2 = 1">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1210" y="876" curvePoint="false"/>
+<arcpath id="001" x="1375" y="876" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 Seguir to G = 0" source="T2 Seguir" target="G = 0">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1041" y="377" curvePoint="false"/>
+<arcpath id="001" x="730" y="447" curvePoint="false"/>
+<arcpath id="002" x="712" y="462" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 Seguir to T2 segue por G" source="T2 Seguir" target="T2 segue por G">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="1045" y="396" curvePoint="false"/>
+<arcpath id="001" x="1046" y="547" curvePoint="false"/>
+<arcpath id="002" x="982" y="598" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Verificar caminho to Parar" source="T1 em verificar caminho" target="T1 Parar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="496" y="320" curvePoint="false"/>
+<arcpath id="001" x="530" y="382" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Verificar caminho to Seguir" source="T1 em verificar caminho" target="T1 Seguir">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="483" y="320" curvePoint="false"/>
+<arcpath id="001" x="451" y="374" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

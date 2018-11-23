@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="S1 Amarelo">
+<graphics>
+<position x="165.0" y="165.0"/>
+</graphics>
+<name>
+<value>S1 Amarelo</value>
+<graphics>
+<offset x="0.0" y="13.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="S1 Verde">
+<graphics>
+<position x="165.0" y="15.0"/>
+</graphics>
+<name>
+<value>S1 Verde</value>
+<graphics>
+<offset x="-1.0" y="14.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="S1 Vermelho">
+<graphics>
+<position x="165.0" y="315.0"/>
+</graphics>
+<name>
+<value>S1 Vermelho</value>
+<graphics>
+<offset x="1.0" y="29.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="S2 Amarelo">
+<graphics>
+<position x="315.0" y="165.0"/>
+</graphics>
+<name>
+<value>S2 Amarelo</value>
+<graphics>
+<offset x="99.0" y="14.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="S2 Verde">
+<graphics>
+<position x="315.0" y="15.0"/>
+</graphics>
+<name>
+<value>S2 Verde</value>
+<graphics>
+<offset x="86.0" y="8.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="S2 Vermelho">
+<graphics>
+<position x="315.0" y="315.0"/>
+</graphics>
+<name>
+<value>S2 Vermelho</value>
+<graphics>
+<offset x="100.0" y="23.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="S1 Atenção">
+<graphics>
+<position x="195.0" y="90.0"/>
+</graphics>
+<name>
+<value>S1 Atenção</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S1 Parar">
+<graphics>
+<position x="195.0" y="240.0"/>
+</graphics>
+<name>
+<value>S1 Parar</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S1 Seguir">
+<graphics>
+<position x="60.0" y="165.0"/>
+</graphics>
+<name>
+<value>S1 Seguir</value>
+<graphics>
+<offset x="-5.0" y="35.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S2 Atenção">
+<graphics>
+<position x="285.0" y="90.0"/>
+</graphics>
+<name>
+<value>S2 Atenção</value>
+<graphics>
+<offset x="90.0" y="26.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S2 Parar">
+<graphics>
+<position x="285.0" y="240.0"/>
+</graphics>
+<name>
+<value>S2 Parar</value>
+<graphics>
+<offset x="72.0" y="31.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S2 Seguir">
+<graphics>
+<position x="420.0" y="165.0"/>
+</graphics>
+<name>
+<value>S2 Seguir</value>
+<graphics>
+<offset x="82.0" y="27.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="S1 Amarelo to S1 Parar" source="S1 Amarelo" target="S1 Parar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="183" y="190" curvePoint="false"/>
+<arcpath id="001" x="207" y="237" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Atenção to S1 Amarelo" source="S1 Atenção" target="S1 Amarelo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="207" y="117" curvePoint="false"/>
+<arcpath id="001" x="183" y="163" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Parar to S1 Vermelho" source="S1 Parar" target="S1 Vermelho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="207" y="267" curvePoint="false"/>
+<arcpath id="001" x="183" y="313" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Parar to S2 Vermelho" source="S1 Parar" target="S2 Vermelho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="211" y="252" curvePoint="false"/>
+<arcpath id="001" x="314" y="318" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Seguir to S1 Verde" source="S1 Seguir" target="S1 Verde">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="77" y="172" curvePoint="false"/>
+<arcpath id="001" x="168" y="39" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Verde to S1 Atenção" source="S1 Verde" target="S1 Atenção">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="183" y="40" curvePoint="false"/>
+<arcpath id="001" x="207" y="87" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 Vermelho to S1 Seguir" source="S1 Vermelho" target="S1 Seguir">
+<graphics/>
+<inscription>
+<value>Default,2</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="168" y="314" curvePoint="false"/>
+<arcpath id="001" x="76" y="182" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Amarelo to S2 Parar" source="S2 Amarelo" target="S2 Parar">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="320" y="190" curvePoint="false"/>
+<arcpath id="001" x="297" y="237" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Atenção to S2 Amarelo" source="S2 Atenção" target="S2 Amarelo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="297" y="117" curvePoint="false"/>
+<arcpath id="001" x="320" y="163" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Parar to S1 Vermelho" source="S2 Parar" target="S1 Vermelho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="291" y="252" curvePoint="false"/>
+<arcpath id="001" x="189" y="318" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Parar to S2 Vermelho" source="S2 Parar" target="S2 Vermelho">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="297" y="267" curvePoint="false"/>
+<arcpath id="001" x="320" y="313" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Seguir to S2 Verde" source="S2 Seguir" target="S2 Verde">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="427" y="172" curvePoint="false"/>
+<arcpath id="001" x="335" y="39" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Verde to S2 Atenção" source="S2 Verde" target="S2 Atenção">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="320" y="40" curvePoint="false"/>
+<arcpath id="001" x="297" y="87" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 Vermelho to S2 Seguir" source="S2 Vermelho" target="S2 Seguir">
+<graphics/>
+<inscription>
+<value>Default,2</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="335" y="314" curvePoint="false"/>
+<arcpath id="001" x="426" y="182" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

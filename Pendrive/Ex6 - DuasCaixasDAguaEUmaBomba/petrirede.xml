@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pnml xmlns="http://www.informatik.hu-berlin.de/top/pnml/ptNetb">
+  <net active="true" id="TAPN1" type="P/T net">
+    <place displayName="true" id="a_comAgua" initialMarking="0" invariant="&lt; inf" markingOffsetX="0.0" markingOffsetY="0.0" name="a_comAgua" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="225.0" positionY="90.0"/>
+    <place displayName="true" id="a_semAgua" initialMarking="1" invariant="&lt; inf" markingOffsetX="0.0" markingOffsetY="0.0" name="a_semAgua" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="225.0" positionY="210.0"/>
+    <place displayName="true" id="b_full_false" initialMarking="1" invariant="&lt; inf" markingOffsetX="0.0" markingOffsetY="0.0" name="b_full_false" nameOffsetX="-3.0" nameOffsetY="35.0" positionX="660.0" positionY="210.0"/>
+    <place displayName="true" id="b_full_true" initialMarking="0" invariant="&lt; inf" markingOffsetX="0.0" markingOffsetY="0.0" name="b_full_true" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="660.0" positionY="90.0"/>
+    <place displayName="true" id="pump_on" initialMarking="0" invariant="&lt; inf" markingOffsetX="0.0" markingOffsetY="0.0" name="pump_on" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="435.0" positionY="90.0"/>
+    <place displayName="true" id="pump_off" initialMarking="1" invariant="&lt; inf" markingOffsetX="0.0" markingOffsetY="0.0" name="pump_off" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="435.0" positionY="210.0"/>
+    <transition angle="0" displayName="true" id="a_encheu" infiniteServer="false" name="a_encheu" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="165.0" positionY="150.0" priority="0" urgent="false"/>
+    <transition angle="0" displayName="true" id="ligar_pump" infiniteServer="false" name="ligar_pump" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="435.0" positionY="150.0" priority="0" urgent="false"/>
+    <transition angle="0" displayName="true" id="consumiu_b" infiniteServer="false" name="consumiu_b" nameOffsetX="87.0" nameOffsetY="16.0" positionX="720.0" positionY="150.0" priority="0" urgent="false"/>
+    <transition angle="0" displayName="true" id="a_esvaziou" infiniteServer="false" name="a_esvaziou" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="285.0" positionY="150.0" priority="0" urgent="false"/>
+    <transition angle="0" displayName="true" id="b_encheu_desligar_pump" infiniteServer="false" name="b_encheu_desligar_pump" nameOffsetX="-5.0" nameOffsetY="35.0" positionX="600.0" positionY="150.0" priority="0" urgent="false"/>
+    <arc id="a_semAgua to a_encheu" inscription="[0,inf)" source="a_semAgua" target="a_encheu" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="226" yCoord="211"/>
+      <arcpath arcPointType="false" id="1" xCoord="181" yCoord="167"/>
+    </arc>
+    <arc id="a_encheu to a_comAgua" inscription="1" source="a_encheu" target="a_comAgua" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="182" yCoord="157"/>
+      <arcpath arcPointType="false" id="1" xCoord="226" yCoord="112"/>
+    </arc>
+    <arc id="b_full_true to consumiu_b" inscription="[0,inf)" source="b_full_true" target="consumiu_b" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="682" yCoord="112"/>
+      <arcpath arcPointType="false" id="1" xCoord="727" yCoord="157"/>
+    </arc>
+    <arc id="consumiu_b to b_full_false" inscription="1" source="consumiu_b" target="b_full_false" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="726" yCoord="167"/>
+      <arcpath arcPointType="false" id="1" xCoord="682" yCoord="211"/>
+    </arc>
+    <arc id="a_comAgua to ligar_pump" inscription="[0,inf)" source="a_comAgua" target="ligar_pump" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="251" yCoord="106"/>
+      <arcpath arcPointType="false" id="1" xCoord="441" yCoord="170"/>
+    </arc>
+    <arc id="pump_off to ligar_pump" inscription="[0,inf)" source="pump_off" target="ligar_pump" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="447" yCoord="207"/>
+      <arcpath arcPointType="false" id="1" xCoord="447" yCoord="177"/>
+    </arc>
+    <arc id="ligar_pump to pump_on" inscription="1" source="ligar_pump" target="pump_on" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="447" yCoord="147"/>
+      <arcpath arcPointType="false" id="1" xCoord="447" yCoord="116"/>
+    </arc>
+    <arc id="a_comAgua to a_esvaziou" inscription="[0,inf)" source="a_comAgua" target="a_esvaziou" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="247" yCoord="112"/>
+      <arcpath arcPointType="false" id="1" xCoord="292" yCoord="157"/>
+    </arc>
+    <arc id="a_esvaziou to a_semAgua" inscription="1" source="a_esvaziou" target="a_semAgua" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="291" yCoord="167"/>
+      <arcpath arcPointType="false" id="1" xCoord="247" yCoord="211"/>
+    </arc>
+    <arc id="pump_on to a_esvaziou" inscription="[0,inf)" source="pump_on" target="a_esvaziou" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="432" yCoord="103"/>
+      <arcpath arcPointType="false" id="1" xCoord="363" yCoord="109"/>
+      <arcpath arcPointType="false" id="2" xCoord="302" yCoord="157"/>
+    </arc>
+    <arc id="b_full_false to b_encheu_desligar_pump" inscription="[0,inf)" source="b_full_false" target="b_encheu_desligar_pump" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="661" yCoord="211"/>
+      <arcpath arcPointType="false" id="1" xCoord="616" yCoord="167"/>
+    </arc>
+    <arc id="b_encheu_desligar_pump to b_full_true" inscription="1" source="b_encheu_desligar_pump" target="b_full_true" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="617" yCoord="157"/>
+      <arcpath arcPointType="false" id="1" xCoord="661" yCoord="112"/>
+    </arc>
+    <arc id="b_encheu_desligar_pump to pump_off" inscription="1" source="b_encheu_desligar_pump" target="pump_off" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="606" yCoord="167"/>
+      <arcpath arcPointType="false" id="1" xCoord="461" yCoord="217"/>
+    </arc>
+    <arc id="pump_on to b_encheu_desligar_pump" inscription="[0,inf)" source="pump_on" target="b_encheu_desligar_pump" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="461" yCoord="106"/>
+      <arcpath arcPointType="false" id="1" xCoord="607" yCoord="157"/>
+    </arc>
+    <arc id="a_esvaziou to pump_off" inscription="1" source="a_esvaziou" target="pump_off" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="301" yCoord="167"/>
+      <arcpath arcPointType="false" id="1" xCoord="432" yCoord="216"/>
+    </arc>
+    <arc id="b_full_false to ligar_pump" inscription="[0,inf)" source="b_full_false" target="ligar_pump" type="timed" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="657" yCoord="217"/>
+      <arcpath arcPointType="false" id="1" xCoord="452" yCoord="157"/>
+    </arc>
+    <arc id="ligar_pump to b_full_false" inscription="1" source="ligar_pump" target="b_full_false" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="451" yCoord="167"/>
+      <arcpath arcPointType="false" id="1" xCoord="537" yCoord="222"/>
+      <arcpath arcPointType="false" id="2" xCoord="657" yCoord="222"/>
+    </arc>
+    <arc id="ligar_pump to a_comAgua" inscription="1" source="ligar_pump" target="a_comAgua" type="normal" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="442" yCoord="156"/>
+      <arcpath arcPointType="false" id="1" xCoord="357" yCoord="102"/>
+      <arcpath arcPointType="false" id="2" xCoord="252" yCoord="102"/>
+    </arc>
+  </net>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="naooverflowa" overApproximation="false" pTrie="false" reduction="true" reductionOption="VerifyPN" searchOption="HEURISTIC" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true">
+    <formula>
+      <all-paths>
+        <globally>
+          <negation>
+            <conjunction>
+              <integer-eq>
+                <tokens-count>
+                  <place>TAPN1.b_full_true</place>
+                </tokens-count>
+                <integer-constant>1</integer-constant>
+              </integer-eq>
+              <integer-eq>
+                <tokens-count>
+                  <place>TAPN1.pump_on</place>
+                </tokens-count>
+                <integer-constant>1</integer-constant>
+              </integer-eq>
+            </conjunction>
+          </negation>
+        </globally>
+      </all-paths>
+    </formula>
+  </query>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="Fica tudo vazio??" overApproximation="false" pTrie="false" reduction="true" reductionOption="VerifyPN" searchOption="HEURISTIC" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true">
+    <formula>
+      <exists-path>
+        <finally>
+          <conjunction>
+            <integer-eq>
+              <tokens-count>
+                <place>TAPN1.a_semAgua</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-eq>
+            <integer-eq>
+              <tokens-count>
+                <place>TAPN1.b_full_false</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-eq>
+          </conjunction>
+        </finally>
+      </exists-path>
+    </formula>
+  </query>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="seguro" overApproximation="false" pTrie="false" reduction="true" reductionOption="VerifyPN" searchOption="HEURISTIC" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true">
+    <formula>
+      <all-paths>
+        <globally>
+          <conjunction>
+            <integer-le>
+              <tokens-count>
+                <place>TAPN1.a_comAgua</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-le>
+            <integer-le>
+              <tokens-count>
+                <place>TAPN1.a_semAgua</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-le>
+            <integer-le>
+              <tokens-count>
+                <place>TAPN1.b_full_false</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-le>
+            <integer-le>
+              <tokens-count>
+                <place>TAPN1.b_full_true</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-le>
+            <integer-le>
+              <tokens-count>
+                <place>TAPN1.pump_off</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-le>
+            <integer-le>
+              <tokens-count>
+                <place>TAPN1.pump_on</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-le>
+          </conjunction>
+        </globally>
+      </all-paths>
+    </formula>
+  </query>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="bombamorre" overApproximation="false" pTrie="false" reduction="true" reductionOption="VerifyPN" searchOption="HEURISTIC" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true">
+    <formula>
+      <all-paths>
+        <globally>
+          <negation>
+            <conjunction>
+              <integer-eq>
+                <tokens-count>
+                  <place>TAPN1.a_semAgua</place>
+                </tokens-count>
+                <integer-constant>1</integer-constant>
+              </integer-eq>
+              <integer-eq>
+                <tokens-count>
+                  <place>TAPN1.pump_on</place>
+                </tokens-count>
+                <integer-constant>1</integer-constant>
+              </integer-eq>
+            </conjunction>
+          </negation>
+        </globally>
+      </all-paths>
+    </formula>
+  </query>
+  <k-bound bound="3"/>
+</pnml>

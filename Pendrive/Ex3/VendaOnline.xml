@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="Cartão válido">
+<graphics>
+<position x="315.0" y="225.0"/>
+</graphics>
+<name>
+<value>Cartão válido</value>
+<graphics>
+<offset x="-5.0" y="17.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Despachado">
+<graphics>
+<position x="675.0" y="225.0"/>
+</graphics>
+<name>
+<value>Despachado</value>
+<graphics>
+<offset x="86.0" y="-3.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Entrar c/ Dados Pgto.">
+<graphics>
+<position x="315.0" y="75.0"/>
+</graphics>
+<name>
+<value>Entrar c/ Dados Pgto.</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,1</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="NFe gerada">
+<graphics>
+<position x="495.0" y="345.0"/>
+</graphics>
+<name>
+<value>NFe gerada</value>
+<graphics>
+<offset x="76.0" y="4.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Pacote pronto">
+<graphics>
+<position x="675.0" y="405.0"/>
+</graphics>
+<name>
+<value>Pacote pronto</value>
+<graphics>
+<offset x="85.0" y="48.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Pagamento Aprovado">
+<graphics>
+<position x="315.0" y="405.0"/>
+</graphics>
+<name>
+<value>Pagamento Aprovado</value>
+<graphics>
+<offset x="-17.0" y="11.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Produtos separados">
+<graphics>
+<position x="495.0" y="465.0"/>
+</graphics>
+<name>
+<value>Produtos separados</value>
+<graphics>
+<offset x="84.0" y="48.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="cartão aprovado">
+<graphics>
+<position x="315.0" y="315.0"/>
+</graphics>
+<name>
+<value>cartão aprovado</value>
+<graphics>
+<offset x="-4.0" y="30.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="cartão recusado">
+<graphics>
+<position x="420.0" y="150.0"/>
+</graphics>
+<name>
+<value>cartão recusado</value>
+<graphics>
+<offset x="114.0" y="19.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="checando cartão de crédito">
+<graphics>
+<position x="315.0" y="150.0"/>
+</graphics>
+<name>
+<value>checando cartão de crédito</value>
+<graphics>
+<offset x="-3.0" y="36.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="despachando produtos">
+<graphics>
+<position x="675.0" y="315.0"/>
+</graphics>
+<name>
+<value>despachando produtos</value>
+<graphics>
+<offset x="160.0" y="22.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="empacotamento">
+<graphics>
+<position x="585.0" y="405.0"/>
+</graphics>
+<name>
+<value>empacotamento</value>
+<graphics>
+<offset x="77.0" y="51.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="preparando produtos">
+<graphics>
+<position x="405.0" y="405.0"/>
+</graphics>
+<name>
+<value>preparando produtos</value>
+<graphics>
+<offset x="39.0" y="51.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="cartão aprovado to Pagamento Aprovado" source="cartão aprovado" target="Pagamento Aprovado">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="327" y="342" curvePoint="false"/>
+<arcpath id="001" x="327" y="402" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="cartão recusado to Entrar c/ Dados Pgto." source="cartão recusado" target="Entrar c/ Dados Pgto.">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="427" y="157" curvePoint="false"/>
+<arcpath id="001" x="339" y="95" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Cartão válido to cartão aprovado" source="Cartão válido" target="cartão aprovado">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="327" y="251" curvePoint="false"/>
+<arcpath id="001" x="327" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Cartão válido to cartão recusado" source="Cartão válido" target="cartão recusado">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="339" y="228" curvePoint="false"/>
+<arcpath id="001" x="426" y="167" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="checando cartão de crédito to Cartão válido" source="checando cartão de crédito" target="Cartão válido">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="327" y="177" curvePoint="false"/>
+<arcpath id="001" x="327" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="despachando produtos to Despachado" source="despachando produtos" target="Despachado">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="687" y="312" curvePoint="false"/>
+<arcpath id="001" x="687" y="251" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="empacotamento to Pacote pronto" source="empacotamento" target="Pacote pronto">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="601" y="417" curvePoint="false"/>
+<arcpath id="001" x="672" y="417" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Entrar c/ Dados Pgto. to checando cartão de crédito" source="Entrar c/ Dados Pgto." target="checando cartão de crédito">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="327" y="101" curvePoint="false"/>
+<arcpath id="001" x="327" y="147" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="NFe gerada to empacotamento" source="NFe gerada" target="empacotamento">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="519" y="365" curvePoint="false"/>
+<arcpath id="001" x="592" y="412" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pacote pronto to despachando produtos" source="Pacote pronto" target="despachando produtos">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="687" y="402" curvePoint="false"/>
+<arcpath id="001" x="687" y="342" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Pagamento Aprovado to preparando produtos" source="Pagamento Aprovado" target="preparando produtos">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="341" y="417" curvePoint="false"/>
+<arcpath id="001" x="411" y="417" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="preparando produtos to NFe gerada" source="preparando produtos" target="NFe gerada">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="422" y="412" curvePoint="false"/>
+<arcpath id="001" x="494" y="365" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="preparando produtos to Produtos separados" source="preparando produtos" target="Produtos separados">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="421" y="422" curvePoint="false"/>
+<arcpath id="001" x="494" y="468" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Produtos separados to empacotamento" source="Produtos separados" target="empacotamento">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="519" y="468" curvePoint="false"/>
+<arcpath id="001" x="591" y="422" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>

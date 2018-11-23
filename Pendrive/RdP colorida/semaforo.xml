@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="am" enabled="true" red="204" green="204" blue="0"/>
+<token id="Default" enabled="false" red="0" green="0" blue="0"/>
+<token id="vd" enabled="true" red="0" green="255" blue="0"/>
+<token id="vm" enabled="true" red="255" green="0" blue="0"/>
+<place id="Sem.1">
+<graphics>
+<position x="240.0" y="180.0"/>
+</graphics>
+<name>
+<value>Sem.1</value>
+<graphics>
+<offset x="0.0" y="10.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>vm,1,am,0,vd,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="Sem.2">
+<graphics>
+<position x="450.0" y="180.0"/>
+</graphics>
+<name>
+<value>Sem.2</value>
+<graphics>
+<offset x="3.0" y="14.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>vm,0,vd,1,am,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="S1 &gt; Am">
+<graphics>
+<position x="165.0" y="180.0"/>
+</graphics>
+<name>
+<value>S1 &gt; Am</value>
+<graphics>
+<offset x="-2.0" y="20.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S1 &gt; Vd, S2 &gt; Vm">
+<graphics>
+<position x="345.0" y="225.0"/>
+</graphics>
+<name>
+<value>S1 &gt; Vd, S2 &gt; Vm</value>
+<graphics>
+<offset x="61.0" y="59.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S1 &gt; Vm, S2 &gt; Vd">
+<graphics>
+<position x="345.0" y="135.0"/>
+</graphics>
+<name>
+<value>S1 &gt; Vm, S2 &gt; Vd</value>
+<graphics>
+<offset x="64.0" y="-23.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="S2 &gt; Am">
+<graphics>
+<position x="525.0" y="180.0"/>
+</graphics>
+<name>
+<value>S2 &gt; Am</value>
+<graphics>
+<offset x="78.0" y="15.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="S1 &gt; Am to Sem.1" source="S1 &gt; Am" target="Sem.1">
+<graphics/>
+<inscription>
+<value>am,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="177" y="207" curvePoint="false"/>
+<arcpath id="001" x="192" y="222" curvePoint="false"/>
+<arcpath id="002" x="237" y="222" curvePoint="false"/>
+<arcpath id="003" x="245" y="205" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 &gt; Vd, S2 &gt; Vm to Sem.1" source="S1 &gt; Vd, S2 &gt; Vm" target="Sem.1">
+<graphics/>
+<inscription>
+<value>vd,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="357" y="222" curvePoint="false"/>
+<arcpath id="001" x="342" y="207" curvePoint="false"/>
+<arcpath id="002" x="282" y="207" curvePoint="false"/>
+<arcpath id="003" x="265" y="198" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 &gt; Vd, S2 &gt; Vm to Sem.2" source="S1 &gt; Vd, S2 &gt; Vm" target="Sem.2">
+<graphics/>
+<inscription>
+<value>vm,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="357" y="222" curvePoint="false"/>
+<arcpath id="001" x="371" y="207" curvePoint="false"/>
+<arcpath id="002" x="432" y="207" curvePoint="false"/>
+<arcpath id="003" x="448" y="198" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 &gt; Vm, S2 &gt; Vd to Sem.1" source="S1 &gt; Vm, S2 &gt; Vd" target="Sem.1">
+<graphics/>
+<inscription>
+<value>vm,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="357" y="162" curvePoint="false"/>
+<arcpath id="001" x="342" y="177" curvePoint="false"/>
+<arcpath id="002" x="282" y="177" curvePoint="false"/>
+<arcpath id="003" x="265" y="185" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S1 &gt; Vm, S2 &gt; Vd to Sem.2" source="S1 &gt; Vm, S2 &gt; Vd" target="Sem.2">
+<graphics/>
+<inscription>
+<value>vd,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="357" y="162" curvePoint="false"/>
+<arcpath id="001" x="373" y="177" curvePoint="false"/>
+<arcpath id="002" x="432" y="177" curvePoint="false"/>
+<arcpath id="003" x="448" y="185" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="S2 &gt; Am to Sem.2" source="S2 &gt; Am" target="Sem.2">
+<graphics/>
+<inscription>
+<value>am,1,vm,0,vd,0</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="537" y="207" curvePoint="false"/>
+<arcpath id="001" x="522" y="222" curvePoint="false"/>
+<arcpath id="002" x="477" y="222" curvePoint="false"/>
+<arcpath id="003" x="468" y="205" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sem.1 to S1 &gt; Am" source="Sem.1" target="S1 &gt; Am">
+<graphics/>
+<inscription>
+<value>vd,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="245" y="178" curvePoint="false"/>
+<arcpath id="001" x="237" y="162" curvePoint="false"/>
+<arcpath id="002" x="192" y="162" curvePoint="false"/>
+<arcpath id="003" x="177" y="177" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sem.1 to S1 &gt; Vd, S2 &gt; Vm" source="Sem.1" target="S1 &gt; Vd, S2 &gt; Vm">
+<graphics/>
+<inscription>
+<value>vm,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="257" y="205" curvePoint="false"/>
+<arcpath id="001" x="282" y="267" curvePoint="false"/>
+<arcpath id="002" x="342" y="267" curvePoint="false"/>
+<arcpath id="003" x="357" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sem.1 to S1 &gt; Vm, S2 &gt; Vd" source="Sem.1" target="S1 &gt; Vm, S2 &gt; Vd">
+<graphics/>
+<inscription>
+<value>am,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="257" y="178" curvePoint="false"/>
+<arcpath id="001" x="282" y="117" curvePoint="false"/>
+<arcpath id="002" x="342" y="117" curvePoint="false"/>
+<arcpath id="003" x="357" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sem.2 to S1 &gt; Vd, S2 &gt; Vm" source="Sem.2" target="S1 &gt; Vd, S2 &gt; Vm">
+<graphics/>
+<inscription>
+<value>am,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="456" y="205" curvePoint="false"/>
+<arcpath id="001" x="432" y="267" curvePoint="false"/>
+<arcpath id="002" x="372" y="267" curvePoint="false"/>
+<arcpath id="003" x="357" y="252" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sem.2 to S1 &gt; Vm, S2 &gt; Vd" source="Sem.2" target="S1 &gt; Vm, S2 &gt; Vd">
+<graphics/>
+<inscription>
+<value>vm,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="456" y="178" curvePoint="false"/>
+<arcpath id="001" x="432" y="117" curvePoint="false"/>
+<arcpath id="002" x="372" y="117" curvePoint="false"/>
+<arcpath id="003" x="357" y="132" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="Sem.2 to S2 &gt; Am" source="Sem.2" target="S2 &gt; Am">
+<graphics/>
+<inscription>
+<value>vd,1,vm,0,am,0</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="468" y="178" curvePoint="false"/>
+<arcpath id="001" x="477" y="162" curvePoint="false"/>
+<arcpath id="002" x="522" y="162" curvePoint="false"/>
+<arcpath id="003" x="537" y="177" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
