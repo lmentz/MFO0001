@@ -62,6 +62,9 @@ int main(int argc, char **argv){
 	// }
 	
 	// trens.Trem2Txt("Mensagem trem 2.");
+
+	t1_thread.join();
+	t2_thread.join();
 	
 	return 0;
 }
