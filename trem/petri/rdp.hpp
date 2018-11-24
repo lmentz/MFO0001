@@ -47,7 +47,7 @@ private:
 		return habilitado;
 	}
 
-  public:
+public:
 	PetriNet(std::vector<std::vector<int> > pre, std::vector<std::vector<int> > pos, std::vector<int> m0,
 			 std::vector<std::string> lugares, std::vector<std::string> transicoes){
 		this->pre = pre;
