@@ -47,7 +47,10 @@ class Trem {
 			Thread::SleepMS(5000);
 		}
 		else if (trans == "t1-t1"){  // Aguardar B1 ligar
+			while (true){
 
+				Thread::SleepMS(25);
+			}
 		}
 		else if (trans == "t1-t2"){  // T1 prossegue por Stans sem parar
 
@@ -142,7 +145,7 @@ class Trem {
 		std::thread tremRunner();
 		std::string trans_hab;
 		while (true){
-			trens->Trem2Txt(rdp->printEstado());
+			// trens->Trem2Txt(rdp->printEstado());
 
 			Thread::SleepMS(2000);
 
@@ -158,14 +161,14 @@ class Trem {
 			}
 
 			rdp->iniciaTransicao(trans_hab);
-			tremPrint("Rodando transicao " + trans_hab + "\n" + rdp->printEstado);
+			tremPrint("Rodando transicao " + trans_hab + "\n" + rdp->printEstado());
 			rdp->unlockRede();
 
 			this->rodaTrans(trans_hab);
 
 			rdp->lockRede();
 			rdp->finalizaTransicao(trans_hab);
-			tremPrint("Finalizado transicao " + trans_hab + "\n" + rdp->printEstado);
+			tremPrint("Finalizado transicao " + trans_hab + "\n" + rdp->printEstado());
 			rdp->unlockRede();
 
 			// Tratar entrada caso tecla tenha sido pressionada

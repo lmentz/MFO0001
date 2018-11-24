@@ -120,12 +120,10 @@ public:
 		int i = findTransicao(trans);
 		if (i == -1){ // Falha
 			ret = 1;
-			print("CAGOUUUU\n");
+			printf("CAGOUUUU\n");
 		}
-		else
-		{
-			for (uint j = 0; j < lugares.size(); j++)
-			{
+		else {
+			for (uint j = 0; j < lugares.size(); j++){
 				m[j] += pos[j][i];
 			}
 		}
