@@ -135,7 +135,7 @@ public:
 	std::string printEstado(){
 		std::stringstream estado;
 		for (uint i = 0; i < lugares.size(); i++){
-			estado << m[i] << " ";
+			estado << m[i];
 		}
 		return estado.str();
 	}
