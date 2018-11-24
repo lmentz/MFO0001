@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <mutex>
+#include <sstream>
 
 typedef unsigned int uint;
 
@@ -68,6 +69,7 @@ private:
 	}
 
 	std::string getHabilitadoTrem(std::string trem) {
+		std::vector<std::string> habilitados;
 		for (uint i = 0; i < transicoes.size(); i++){
 			if (transicoes[i].find(trem) != std::string::npos) {
 				bool habilitado = true;
@@ -84,38 +86,42 @@ private:
 				}
 				// mut_trans[i].unlock(); // mutex unlock na coluna i do pre
 				
-				if (habilitado) return transicoes[i];
+				if (habilitado) habilitados.push_back(transicoes[i]);
 			}
 		}
+		
+		if (habilitados.size() > 0) {
+			int elem_aleatorio = rand() % habilitados.size();
+			return habilitados[elem_aleatorio];
+		}
+
 		return "";
 	}
 
 	int iniciaTransicao(std::string trans){
 		int ret = 0;
-		// mutex lock global
-		// mut_global.lock();
 		// m = m - pre; da transição trans
 		int i = findTransicao(trans);
-		if (i == -1 || !getTransacaoHabilitada(trans)) // Falha
+		if (i == -1 || !getTransacaoHabilitada(trans)){ // Falha
 			ret = 1;
+			printf("CAGOUUUU\n");
+		}
 		else {
 			for (uint j = 0; j < lugares.size(); j++){
 				m[j] -= pre[j][i];
 			}
 		}
-		// mutex unlock global
-		// mut_global.unlock();
 		return ret;
 	}
 
 	int finalizaTransicao(std::string trans){
 		int ret = 0;
-		// mutex lock global
-		// mut_global.lock();
 		// m = m + post; da transição trans
 		int i = findTransicao(trans);
-		if (i == -1 || !getTransacaoHabilitada(trans)) // Falha
+		if (i == -1){ // Falha
 			ret = 1;
+			printf("CAGOUUUU\n");
+		}
 		else
 		{
 			for (uint j = 0; j < lugares.size(); j++)
@@ -123,9 +129,15 @@ private:
 				m[j] += pos[j][i];
 			}
 		}
-		// mutex unlock global
-		// mut_global.unlock();
 		return ret;
+	}
+
+	std::string printEstado(){
+		std::stringstream estado;
+		for (uint i = 0; i < lugares.size(); i++){
+			estado << m[i] << " ";
+		}
+		return estado.str();
 	}
 };
 
