@@ -120,7 +120,7 @@ public:
 		int i = findTransicao(trans);
 		if (i == -1){ // Falha
 			ret = 1;
-			printf("CAGOUUUU\n");
+			print("CAGOUUUU\n");
 		}
 		else
 		{
