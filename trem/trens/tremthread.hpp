@@ -38,8 +38,48 @@ class Trem {
 				trens->Trem1Pos((-1) * tremPos, 1);
 			}
 			else{
-				trens->Trem1Pos(tremPos, 2);
+				trens->Trem1Pos(tremPos, 0);
 			}
+		}
+		else if (nome == "t2")
+		{
+			if (tremPos < 0)
+			{
+				trens->Trem2Pos((-1) * tremPos, 2);
+			}
+			else
+			{
+				trens->Trem2Pos(tremPos, 0);
+			}
+		}
+	}
+
+	void tremRunner()
+	{
+		while (true)
+		{
+			if (ordem == "r")
+			{
+				tremSpeed = MAX(tremSpeed + 0.02, 1);
+			}
+			else if (ordem == "l")
+			{
+				tremSpeed = MIN(tremSpeed - 0.02, -1);
+			}
+			else if (ordem == "s")
+			{
+				if (tremSpeed > 0)
+				{
+					tremSpeed = MAX(tremSpeed - 0.02, 0);
+				}
+				else if (tremSpeed < 0)
+				{
+					tremSpeed = MIN(tremSpeed + 0.02, 0);
+				}
+			}
+			tremPos += tremSpeed;
+			updatePosTrem();
+			Thread::SleepMS(50);
 		}
 	}
 
@@ -51,6 +91,7 @@ class Trem {
 			ordem = "r";
 			Thread::SleepMS(5000);
 		}
+		
 		else if (trans == "t1-t1")
 		{ // Aguardar B1 ligar
 			while (true)
@@ -129,35 +170,6 @@ class Trem {
 		}
 		else if (trans == "t2-t23")
 		{ //
-		}
-	}
-
-	void tremRunner()
-	{
-		while (true)
-		{
-			if (ordem == "r")
-			{
-				tremSpeed = MAX(tremSpeed + 0.02, 1);
-			}
-			else if (ordem == "l")
-			{
-				tremSpeed = MIN(tremSpeed - 0.02, -1);
-			}
-			else if (ordem == "s")
-			{
-				if (tremSpeed > 0)
-				{
-					tremSpeed = MAX(tremSpeed - 0.02, 0);
-				}
-				else if (tremSpeed < 0)
-				{
-					tremSpeed = MIN(tremSpeed + 0.02, 0);
-				}
-			}
-			tremPos += tremSpeed;
-			updatePosTrem();
-			Thread::SleepMS(50);
 		}
 	}
 
