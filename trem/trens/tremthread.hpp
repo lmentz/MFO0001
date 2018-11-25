@@ -56,30 +56,31 @@ class Trem {
 
 	void tremRunner()
 	{
+		double accel = 0.0001;
 		while (true)
 		{
 			if (ordem == "r")
 			{
-				tremSpeed = MAX(tremSpeed + 0.02, 1);
+				tremSpeed = MAX(tremSpeed + accel, 1);
 			}
 			else if (ordem == "l")
 			{
-				tremSpeed = MIN(tremSpeed - 0.02, -1);
+				tremSpeed = MIN(tremSpeed - accel, -1);
 			}
 			else if (ordem == "s")
 			{
 				if (tremSpeed > 0)
 				{
-					tremSpeed = MAX(tremSpeed - 0.02, 0);
+					tremSpeed = MAX(tremSpeed - accel, 0);
 				}
 				else if (tremSpeed < 0)
 				{
-					tremSpeed = MIN(tremSpeed + 0.02, 0);
+					tremSpeed = MIN(tremSpeed + accel, 0);
 				}
 			}
 			tremPos += tremSpeed;
 			updatePosTrem();
-			Thread::SleepMS(50);
+			Thread::SleepMS(5);
 		}
 	}
 
