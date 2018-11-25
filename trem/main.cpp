@@ -19,10 +19,16 @@ int main(int argc, char **argv){
 	Trem t1("t1", &rdp_trem, &trens);
 	Trem t2("t2", &rdp_trem, &trens);
 
+	// cout << &trens << endl
+	// 	 << &rdp_trem << endl
+	// 	 << &t1 << endl
+	// 	 << &t2 << endl << endl;
+
 	thread t1_thread(&Trem::startWorker, &t1);
+	Thread::SleepMS(10);
 	thread t2_thread(&Trem::startWorker, &t2);
 
-	// trens.Gate(1);    
+	// trens.Gate(1);
    
 	// for(float p = -1; p <= 1; p += 0.01)
 	// {
